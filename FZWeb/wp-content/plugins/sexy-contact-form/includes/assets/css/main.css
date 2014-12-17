@@ -1,0 +1,930 @@
+.sexycontactform_wrapper {
+	box-sizing: content-box;
+	width: 98%;
+	margin: 15px auto;
+	padding: 0 !important;
+	position: relative !important;
+	float: none !important;
+	
+	-webkit-transition:  background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+	-moz-transition: background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+	-o-transition: background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+	transition: background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+}
+.sexycontactform_wrapper *{
+	box-sizing: content-box;
+}
+
+.sexycontactform_wrapper input,.sexycontactform_wrapper div,.sexycontactform_wrapper textarea{
+	line-height: 17px !important;
+}
+.sexycontactform_pre_text {
+	line-height: 15px !important;
+}
+
+.sexycontactus_field_name {
+	display: block !important;
+	float: none !important;
+}
+
+.sexycontactform_wrapper_inner {
+	position: relative !important;
+}
+
+.sexycontactform_form {
+	display: block !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.sexycontactform_title {
+	margin: 0 0 0 0 !important;
+	font-family: inherit !important;
+	padding: 0 !important;
+	line-height: 25px !important;
+}
+.sexycontactform_wrapper input.sexycontactform_send,.sexycontactform_wrapper input.sexycontactform_send_new,
+.sexycontactform_wrapper input.sexycontactform_send:hover,.sexycontactform_wrapper input.sexycontactform_send_new:hover,
+.sexycontactform_wrapper input.sexycontactform_send:active,.sexycontactform_wrapper input.sexycontactform_send_new:active,
+.sexycontactform_wrapper input.sexycontactform_send:focus,.sexycontactform_wrapper input.sexycontactform_send_new:focus
+{
+	cursor: pointer !important;
+	outline: none !important;
+	height: auto !important;
+	width: auto !important;
+	line-height: 17px !important;
+
+	-webkit-transition:  background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+	-moz-transition: background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+	-o-transition: background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+	transition: background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+}
+
+.sexycontactform_send_new {
+}
+
+.sexycontactform_field_box {
+	margin: 0 0 10px 0 !important;
+	padding: 0 !important;
+}
+
+.sexycontactform_field_name {
+	display: block !important;
+	padding: 0 !important;
+	float: none !important;
+}
+.sexycontactform_submit_wrapper {
+	position: relative;
+}
+.sexycontactform_clear {
+	background: none !important;
+	border: 0 !important;
+	clear: both !important;
+	display: block !important;
+	float: none !important;
+	font-size: 0 !important;
+	list-style: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+	visibility: hidden !important;
+	width: 0 !important;
+	height: 0 !important;
+}
+
+.sexycontactform_loading_wrapper {
+	position: absolute !important;
+	top: 0 !important;
+	left: 0 !important;
+	bottom: 0 !important;
+	right: 0 !important;
+	display: none;
+	z-index: 100 !important;
+
+	background-color: rgba(0, 0, 0, 0.55) !important;
+}
+
+.sexy_title_holder {
+	clear: both !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	height: 10px !important;
+}
+
+/********************************************************************************************************************INPUT RULES************************************************************************************************************************ */
+.sexy_input_reset {
+	display: block !important;
+	width: auto !important;
+	height: 18px !important;
+	border: none !important;
+	background: none !important;
+	margin: 0 !important;
+	padding: 0  !important;
+	outline: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	width: 100% !important;
+
+	box-sizing:border-box !important;
+	-moz-box-sizing:border-box !important; /* Firefox */
+	-webkit-box-sizing:border-box !important;
+}
+/*inputs  width and height control ************************************** */
+.sexycontactform_input_element {
+	min-width: 140px !important;
+	max-width: 100% !important;
+	height: 27px;
+	position: relative !important;
+	display: block !important;
+
+	-webkit-transition:  background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+	-moz-transition: background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+	-o-transition: background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+	transition: background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+}
+
+/************************************************************************ */
+.sexy_input_dummy_wrapper {
+	position: relative;
+	padding: 4px 8px 0px 8px;
+}
+
+.sexy_textarea_reset {
+	display: block !important;
+	float: none !important;
+	background-image: none !important;
+	width: 100% !important;
+	border: none !important;
+	background: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	outline: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+
+	box-sizing:border-box !important;
+	-moz-box-sizing:border-box !important; /* Firefox */
+	-webkit-box-sizing:border-box !important;
+}
+/*TEXT area width. height control *********************************************************************************************************************************************** */
+.sexy_textarea_wrapper {
+	/*width: 95% !important;
+	height: 150px !important;*/
+}
+.sexy_textarea {
+	resize: none !important;
+	height: 90%;
+}
+
+.sexycontactform_submit_wrapper {
+}
+/************************************************************************************************************************************************* */
+.sexy_textarea_dummy_wrapper {
+	padding: 5px 8px 8px 8px !important;
+	position: relative !important;
+	height: 100%;
+}
+.sexy_clear {
+	background: none !important;
+	border: 0 !important;
+	clear: both !important;
+	display: block !important;
+	float: none !important;
+	font-size: 0 !important;
+	list-style: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	overflow: hidden !important;
+	visibility: hidden !important;
+	width: 0 !important;
+	height: 0 !important;
+}
+
+.sexycontactform_wrapper .answer_name {
+	padding: 0!important;
+	margin: 0!important;
+	display: block!important;
+	cursor: pointer!important;
+	text-align: left!important;
+	float: left!important;
+	width: 100%!important;
+}
+.sexycontactform_wrapper .answer_name label {
+	margin: 6px 0 0 33px;
+	padding: 0;
+	display: block;
+}
+
+.answer_input {
+padding: 0!important;
+margin: 0;
+width: 33px!important;
+display: block!important;
+float: left!important;
+margin-left: -100%;
+}
+
+
+/**********************************************************************CHECKBOX***********************************************************************/
+.sexyform_twoglux_styled_input_wrapper {
+	float: left !important;
+	width: 30px !important;
+	height: 26px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	position: relative !important;
+	z-index: 1 !important;
+}
+
+.sexyform_twoglux_styled_element {
+	width: 30px !important;
+	height: 30px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	display: block;
+	cursor: pointer !important;
+	position: relative !important;
+	z-index: 1 !important;
+	text-decoration: none;
+	outline: 0 none !important;
+	border: none !important;
+	background-color: transparent !important;
+	transition: none !important;
+	-webkit-transition: none !important;
+}
+.sexyform_twoglux_styled_element:hover {
+	background-color: transparent !important;
+}
+
+.sexyform_twoglux_styled_radio {
+	background-position: 0 -120px;
+}
+.sexyform_twoglux_styled_checkbox {
+	background-position: 0 0;
+}
+
+.sexyform_twoglux_styled_black { 
+	background-image: url(../images/sexycheckboxes/icons-black.png) !important;
+}
+.black_checkbox_part1 { 
+	background: transparent url(../images/sexycheckboxes/black-checkbox-part1.png) top left no-repeat !important;
+}
+.black_checkbox_part2 { 
+	background: transparent url(../images/sexycheckboxes/black-checkbox-part2.png) bottom left no-repeat !important;
+}
+.black_radio_part1 { 
+	background: transparent url(../images/sexycheckboxes/black-radio-part1.png) top left no-repeat !important;
+}
+
+.sexyform_twoglux_styled_green { 
+	background-image: url(../images/sexycheckboxes/icons-green.png) !important;
+}
+.green_checkbox_part1 { 
+	background: transparent url(../images/sexycheckboxes/green-checkbox-part1.png) top left no-repeat !important;
+}
+.green_checkbox_part2 { 
+	background: transparent url(../images/sexycheckboxes/green-checkbox-part2.png) bottom left no-repeat !important;
+}
+.green_radio_part1 { 
+	background: transparent url(../images/sexycheckboxes/green-radio-part1.png) top left no-repeat !important;
+}
+
+.sexyform_twoglux_styled_litegreen { 
+	background-image: url(../images/sexycheckboxes/icons-litegreen.png) !important;
+}
+.litegreen_checkbox_part1 { 
+	background: transparent url(../images/sexycheckboxes/litegreen-checkbox-part1.png) top left no-repeat !important;
+}
+.litegreen_checkbox_part2 { 
+	background: transparent url(../images/sexycheckboxes/litegreen-checkbox-part2.png) bottom left no-repeat !important;
+}
+.litegreen_radio_part1 { 
+	background: transparent url(../images/sexycheckboxes/litegreen-radio-part1.png) top left no-repeat !important;
+}
+
+.sexyform_twoglux_styled_blue { 
+	background-image: url(../images/sexycheckboxes/icons-blue.png) !important;
+}
+.blue_checkbox_part1 { 
+	background: transparent url(../images/sexycheckboxes/blue-checkbox-part1.png) top left no-repeat !important;
+}
+.blue_checkbox_part2 { 
+	background: transparent url(../images/sexycheckboxes/blue-checkbox-part2.png) bottom left no-repeat !important;
+}
+.blue_radio_part1 { 
+	background: transparent url(../images/sexycheckboxes/blue-radio-part1.png) top left no-repeat !important;
+}
+
+.sexyform_twoglux_styled_liteblue { 
+	background-image: url(../images/sexycheckboxes/icons-liteblue.png) !important;
+}
+.liteblue_checkbox_part1 { 
+	background: transparent url(../images/sexycheckboxes/liteblue-checkbox-part1.png) top left no-repeat !important;
+}
+.liteblue_checkbox_part2 { 
+	background: transparent url(../images/sexycheckboxes/liteblue-checkbox-part2.png) bottom left no-repeat !important;
+}
+.liteblue_radio_part1 { 
+	background: transparent url(../images/sexycheckboxes/liteblue-radio-part1.png) top left no-repeat !important;
+}
+
+.sexyform_twoglux_styled_red { 
+	background-image: url(../images/sexycheckboxes/icons-red.png) !important;
+}
+.red_checkbox_part1 { 
+	background: transparent url(../images/sexycheckboxes/red-checkbox-part1.png) top left no-repeat !important;
+}
+.red_checkbox_part2 { 
+	background: transparent url(../images/sexycheckboxes/red-checkbox-part2.png) bottom left no-repeat !important;
+}
+.red_radio_part1 { 
+	background: transparent url(../images/sexycheckboxes/red-radio-part1.png) top left no-repeat !important;
+}
+
+.sexyform_twoglux_styled_yellow { 
+	background-image: url(../images/sexycheckboxes/icons-yellow.png) !important;
+}
+.yellow_checkbox_part1 { 
+	background: transparent url(../images/sexycheckboxes/yellow-checkbox-part1.png) top left no-repeat !important;
+}
+.yellow_checkbox_part2 { 
+	background: transparent url(../images/sexycheckboxes/yellow-checkbox-part2.png) bottom left no-repeat !important;
+}
+.yellow_radio_part1 { 
+	background: transparent url(../images/sexycheckboxes/yellow-radio-part1.png) top left no-repeat !important;
+}
+
+.sexyform_twoglux_styled_crimson { 
+	background-image: url(../images/sexycheckboxes/icons-crimson.png) !important;
+}
+.crimson_checkbox_part1 { 
+	background: transparent url(../images/sexycheckboxes/crimson-checkbox-part1.png) top left no-repeat !important;
+}
+.crimson_checkbox_part2 { 
+	background: transparent url(../images/sexycheckboxes/crimson-checkbox-part2.png) bottom left no-repeat !important;
+}
+.crimson_radio_part1 { 
+	background: transparent url(../images/sexycheckboxes/crimson-radio-part1.png) top left no-repeat !important;
+}
+
+.sexyform_twoglux_styled_litecrimson { 
+	background-image: url(../images/sexycheckboxes/icons-litecrimson.png) !important;
+}
+.litecrimson_checkbox_part1 { 
+	background: transparent url(../images/sexycheckboxes/litecrimson-checkbox-part1.png) top left no-repeat !important;
+}
+.litecrimson_checkbox_part2 { 
+	background: transparent url(../images/sexycheckboxes/litecrimson-checkbox-part2.png) bottom left no-repeat !important;
+}
+.litecrimson_radio_part1 { 
+	background: transparent url(../images/sexycheckboxes/litecrimson-radio-part1.png) top left no-repeat !important;
+}
+
+.sexyform_twoglux_styled_radio_hovered{background-position: 0 -150px !important;}
+.sexyform_twoglux_styled_checkbox_hovered{background-position: 0 -30px !important;}
+
+.sexyform_twoglux_styled_input_wrapper {
+	cursor: pointer !important;
+	border: none !important;
+	outline: 0 none !important;
+}
+.radio_part1 {
+	position: absolute !important;
+	top: 11px;
+	left: 11px;
+	z-index: 2 !important;
+	width: 8px;
+	height: 9px;
+	border: none !important;
+	display: block;
+	line-height:0 !important;
+	overflow: hidden !important;
+	zoom: 1;
+}
+.checkbox_part1 {
+	position: absolute !important;
+	border: none !important;
+	top: 12px;
+	left: 8px;
+	z-index: 2 !important;
+	width: 6px;
+	height: 0px;
+	display: block;
+	line-height:0 !important;
+	overflow: hidden !important;
+	zoom: 1;
+}
+.checkbox_part2 {
+	position: absolute !important;
+	border: none !important;
+	bottom: 8px;
+	left: 14px;
+	z-index: 2 !important;
+	width: 8px;
+	height: 0px;
+	display: block;
+	line-height:0 !important;
+	overflow: hidden !important;
+	zoom: 1 !important;
+}
+
+.unselectable {
+   -moz-user-select     : none !important;
+   -webkit-user-select  : none !important;
+   -o-user-select       : none !important;
+   user-select          : none !important;
+}
+
+/*******************************************************************************SEXY SELECT***********************************************************************************************/
+.sexy_select {
+	cursor: pointer !important;
+}
+.sexy_select .sexy_input_dummy_wrapper {
+	padding: 4px 30px 0px 8px !important;
+	height: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.select_icon {
+	opacity: 0.88;
+	position: absolute;
+	right: 9px;
+	top: 7px;
+	width: 14px;
+	height: 14px;
+	overflow: hidden;
+	background-image: url("../images/glyphicons-halflings.png");
+
+	-webkit-transition: opacity linear 0.2s;
+	-moz-transition: opacity linear 0.2s;
+	-o-transition: opacity linear 0.2s;
+	transition: opacity linear 0.2s;
+}
+.select_icon.closed {
+	background-position: -312px -120px;
+}
+.select_icon.opened {
+	background-position: -288px -120px;
+}
+.sexy_select:hover .select_icon {
+	opacity: 1;
+} 
+.close_icon {
+	display: none;
+	z-index: 10;
+	opacity: 0.35;
+	position: absolute;
+	right: 24px;
+	top: 7px;
+	width: 14px;
+	height: 14px;
+	overflow: hidden;
+	background-image: url("../images/glyphicons-halflings.png");
+	cursor: pointer;
+	background-position: -312px 0px;
+
+	-webkit-transition: opacity linear 0.2s;
+	-moz-transition: opacity linear 0.2s;
+	-o-transition: opacity linear 0.2s;
+	transition: opacity linear 0.2s;
+}
+.close_icon:hover  {
+	opacity: 1;
+} 
+.sexy_options_wrapper {
+	display: none;
+	overflow: hidden;
+	min-height: 0px;
+	min-width: 100%;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	float: left;
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin: 2px 0 2px 0;
+	list-style: none;
+
+	background-color: #ffffff;
+
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+}
+.sexy_options_wrapper:hover {
+	border: 1px solid rgba(0, 0, 0, 0.35);
+
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+}
+.sexy_scoll_inner_wrapper {
+}
+
+.sexy_select_option {
+	position: relative;
+	display: block;
+	padding: 3px 34px 3px 20px;
+	clear: both;
+	font-weight: normal;
+	line-height: 20px;
+	color: #333333;
+	font-size: 13px;
+
+}
+.sexy_select_option:hover{
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #0081c2;
+	background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+	background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+	background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+	background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+	background-repeat: repeat-x;
+}
+.sexy_select_empty_option {
+	position: relative;
+	padding: 3px 34px 3px 20px;
+	clear: both;
+	font-weight: normal;
+	line-height: 20px;
+	color: #333333;
+	font-size: 13px;
+
+	display: none;
+	text-decoration: none;
+	color: #ffffff;
+	background-color: #0081c2;
+	background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
+	background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
+	background-image: -o-linear-gradient(top, #0088cc, #0077b3);
+	background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+	background-repeat: repeat-x;
+}
+.sexy_option_state {
+	display: block;
+	width: 14px;
+	height: 14px;
+	line-height: 14px;
+	vertical-align: text-top;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 11px;
+	top: 5px;
+	overflow: hidden;
+}
+.sexy_select_option.selected .sexy_option_state {
+	background-image: url("../images/glyphicons-halflings.png");
+	background-position: -288px 0;
+}
+.sexy_select_option.selected:hover .sexy_option_state {
+	background-image: url("../images/glyphicons-halflings-white.png");
+	background-position: -288px 0;
+}
+
+.sexy_search {
+	margin: 8px 10px 8px 10px;
+	border: 1px solid rgba(34, 34, 34, 0.25);
+	border-radius: 5px;
+	height: 24px !important;
+	position: relative;
+	padding-right: 25px;
+	padding-left: 5px;
+
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.4), 0 0 8px rgba(100, 100, 100, 0.2);
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.4), 0 0 8px rgba(100, 100, 100, 0.2);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.4), 0 0 8px rgba(100, 100, 100, 0.2);
+
+	-webkit-transition:  background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+	-moz-transition: background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+	-o-transition: background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+	transition: background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+}
+.sexy_search.focused {
+	border: 1px solid rgba(34, 34, 34, 0.5);
+
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.8), 0 0 8px rgba(100, 100, 100, 0.6);
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.8), 0 0 8px rgba(100, 100, 100, 0.6);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.8), 0 0 8px rgba(100, 100, 100, 0.6);
+
+}
+.sexy_search_input {
+	color: #111 !important;
+	font-size: 12px !important;
+	line-height: 20px !important;
+	height: 20px !important;
+	display: block !important;
+	border: none !important;
+	background: none !important;
+
+
+	margin: 2px 0 0 0 !important;
+	padding: 0 !important;
+	outline: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	width: 100% !important;
+
+	box-sizing:border-box !important;
+	-moz-box-sizing:border-box !important; /* Firefox */
+	-webkit-box-sizing:border-box !important;
+}
+.sexy_search .sexy_search_icon {
+	opacity: 0.7;
+	display: block;
+	z-index: 10;
+	position: absolute;
+	right: 7px;
+	top: 5px;
+	width: 14px;
+	height: 14px;
+	overflow: hidden;
+	background-image: url("../images/glyphicons-halflings.png");
+	cursor: pointer;
+	background-position: -49px 0px;
+}
+.sexy_search.focused .sexy_search_icon {
+	opacity: 1;
+}
+
+img.sexy_captcha {
+	border-radius: 6px;
+	margin: 3px 5px 5px 0 !important;
+	padding: 0 !important;
+	float: left;
+	-webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.74) !important;
+	-moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.74) !important;
+	box-shadow: 0 0 7px rgba(0, 0, 0, 0.74) !important;
+	border: none !important;
+	max-width: 100% !important;
+}
+.sexy_form_module .sexy_captcha {
+	max-width: 80%;
+	margin: 3px 2px 5px 0;
+}
+.sexy_form_module .sexy_captcha_input_wrapper {
+	max-width: 80% !important;
+}
+.reload_sexy_captcha {
+	margin: 3px 0px 5px 0;
+	float: left;
+	border-radius: 3px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: transparent url("../images/glyphicons-halflings-white.png") -237px -21px no-repeat;
+	cursor: pointer;
+
+	-webkit-box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.74);
+	-moz-box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.74);
+	box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.74);
+}
+.reload_sexy_captcha:hover {
+	background: #fff url("../images/glyphicons-halflings.png") -237px -21px no-repeat;
+
+	-webkit-box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.74);
+	-moz-box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.74);
+	box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.74);
+}
+
+.sexy_uploaded_icon {
+	display: block;
+	float: left;
+	margin: 0 5px 0 0;
+	border-radius: 3px;
+	width: 20px;
+	height: 20px;
+	background: transparent url("../images/glyphicons-halflings-white.png") -261px 2px no-repeat;
+
+	-webkit-box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.74);
+	-moz-box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.74);
+	box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.74);
+}
+.sexy_remove_uploaded {
+	display: block;
+	float: left;
+	margin: 0px;
+	border-radius: 3px;
+	width: 20px;
+	height: 20px;
+	background: transparent url("../images/glyphicons-halflings-white.png") -309px 3px no-repeat;
+	cursor: pointer;
+
+	-webkit-box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.74);
+	-moz-box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.74);
+	box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.74);
+}
+.sexy_uploaded_file {
+	margin-right: 5px;
+	display: block;
+	float: left;
+}
+.sexy_uploaded_file_item {
+	overflow: hidden;
+	clear: both;
+	margin-bottom: 4px;
+}
+.sexy_uploaded_files {
+	margin-top: 7px;
+	margin-bottom: 4px;
+}
+
+/*sexy alert */
+#sexy_shadow {
+	position : absolute !important;
+	top : 0 !important;
+	right : 0 !important;
+	bottom : 0 !important;
+	left : 0 !important;
+	z-index : 10000 !important;
+	backgroundColor : #000 !important;
+}
+#sexy_alert_wrapper {
+	width: 420px !important;
+	position: absolute !important;
+	background-color: #fff !important;
+	height: auto !important;
+	border-radius: 6px !important;
+	moz-border-radius: 6px !important;
+	-webkit-border-radius: 6px !important;
+	box-shadow: 0 0 15px 0 #222 !important;
+	moz-box-shadow: 0 0 15px 0 #222 !important;
+	-webkit-box-shadow: 0 0 15px 0 #222 !important;
+	background: #fff url("../images/background.png") repeat-x left bottom !important;
+	top: 0;
+	left: 0;
+	padding-bottom: 55px !important;
+	z-index: 10001 !important;
+}
+#sexy_alert_body {
+	height: auto !important;
+	padding: 20px 20px 20px 100px !important;
+	min-height: 80px !important;
+	color: #444 !important;
+	text-align: left !important;
+	font-size: 14px !important;
+	overflow: hidden !important;
+	box-sizing: content-box !important;
+}
+#sexy_alert_body.sexy_normal {
+	background: transparent url("../images/alert.png") no-repeat 20px 20px !important;
+}
+#sexy_alert_body.sexy_error {
+	background: transparent url("../images/error.png") no-repeat 20px 20px !important;
+}
+#sexy_alert_body.sexy_success {
+	background: transparent url("../images/success.png") no-repeat 20px 20px !important;
+}
+#close_sexy_alert {
+	background: transparent !important;
+	position: absolute !important;
+	cursor: pointer !important;
+	padding: 4px 20px !important;
+	bottom: 15px !important;
+	right: 15px !important;
+	margin: 0 !important;
+
+	box-shadow: inset 0 0 15px 1px rgba(253,18,8,0.78) !important;
+	border-radius: 4px !important;
+	background-color: #FF8F00 !important;
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.77) !important;
+	color: white !important;
+	border: none !important;
+	cursor: pointer !important;
+
+	-webkit-transition:  background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+	-moz-transition: background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+	-o-transition: background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+	transition: background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+}
+#close_sexy_alert:hover {
+	box-shadow: inset 0 0 15px 2px rgba(253,18,8,0.78) !important;
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.82) !important;
+	background-color: #FFCC00 !important;
+}
+
+/*DO NOT CHANGE*/
+.sexycontactform_wrapper .powered_by {
+	font-style: italic !important;
+	float: none !important;
+	display: block !important;
+	margin: 4px 0px 0px 0px !important;
+	padding: 0 !important;
+	font-weight: bold !important;
+	font-size: 12px !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	right: 0 !important;
+	top: 0 !important;
+	position: relative !important;
+	visibility: visible !important;
+	overflow: visible !important;
+	height: auto !important;
+	width: auto !important;
+	text-indent: 0px !important;
+	background: none !important;
+	z-index: 10 !important;
+}
+.sexycontactform_wrapper .powered_by span {
+	text-decoration: none !important;
+	display: inline-block !important;
+	margin: 0px !important;
+	padding: 0px !important;
+	font-size: 14px !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	right: 0 !important;
+	top: 0 !important;
+	position: relative !important;
+	visibility: visible !important;
+	overflow: visible !important;
+	height: auto !important;
+	width: auto !important;
+	text-indent: 0px !important;
+	background: none !important;
+	z-index: 10 !important;
+}
+.sexycontactform_wrapper .powered_by span:hover {
+	text-decoration: none !important;
+}
+
+.sexycontactform_wrapper .powered_by {
+	color: rgb(255, 255, 255);
+	text-shadow: 0px -1px 0px #333, 0px 2px 3px rgb(85, 75, 75) !important;
+}
+.sexycontactform_wrapper .powered_by:hover {
+	text-shadow: 0px -1px 0px #333, 0px 3px 3px rgb(85, 75, 75) !important;
+}
+.sexycontactform_wrapper .powered_by span {
+	color: rgb(199, 221, 253);
+	text-shadow: 0px -1px 0px rgba(19, 19, 19, 0.63), 0px 2px 3px rgba(32, 32, 32, 0.78) !important
+}
+.sexycontactform_wrapper .powered_by:hover span  {
+	text-shadow: 0px -1px 0px #333, 0px 3px 3px rgb(85, 75, 75) !important;
+}
+.sexycontactform_hidden {
+	display: none !important;
+}
+
+.sexycontactform_wrapper .special_element {
+	margin: 10px 0px 0px 2px !important;
+	padding: 0 !important;
+	font-weight: bold !important;
+	font-size: 15px !important;
+	
+	float: left !important;
+	display: block !important;
+	margin: 4px 0px 0px 0px !important;
+	padding: 10px !important;
+	font-weight: bold !important;
+	font-size: 1.2em !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	right: 0 !important;
+	top: 0 !important;
+	position: relative !important;
+	visibility: hidden !important;
+	overflow: hidden !important;
+	height: auto;
+	width: auto;
+	text-indent: 0px !important;
+	background: transparent !important;
+	
+	-webkit-transition:  background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+	-moz-transition: background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+	-o-transition: background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+	transition: background linear 0.2s, background-color linear 0.2s, box-shadow linear 0.2s, border linear 0.2s;
+}
+.sexycontactform_wrapper .special_element_inner {
+	text-shadow: 0px -1px 0px #333, 0px 3px 3px rgb(85, 75, 75) !important;
+	box-shadow: 0 0 12px 1px rgba(255, 255, 255, 0.33);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	display: inline-block !important;
+}

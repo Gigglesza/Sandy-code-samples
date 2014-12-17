@@ -1,0 +1,54 @@
+// <?php wp_list_categories('title_li='); ?> 
+
+<?php if (function_exists('z_taxonomy_image_url')) echo z_taxonomy_image_url(); ?>
+
+<?php
+			$categories = get_the_category();
+			$separator = ' ';
+			$output = '';
+			$image = '';
+			if (function_exists('z_taxonomy_image_url')) echo z_taxonomy_image_url();
+			if($categories){
+				foreach($categories as $category) {
+					$output .= '<a href="'.get_category_link( $category->term_id ).'" title="' . esc_attr( sprintf( __( "View all projects in %s" ), $category->name ) ) . '">';
+					 
+					if (function_exists('z_taxonomy_image_url')) 
+						$image = z_taxonomy_image_url( $category->term_id, TRUE );
+						
+					$output .= $image;
+					$output .= '</a>'.$separator;
+				}
+			echo trim($output, $separator);
+			}
+		?>
+		
+		<?php
+		$categories = get_categories();
+		if ($categories) {
+		  foreach($categories as $term) {
+			echo '<div id="full-page-area" class="post">';
+			echo '<div id="full-page-video">' . '<a href="' . get_category_link( $term->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $term->name ) . '" ' . '>';
+			echo '<img src="' . $image_text = z_taxonomy_image_url( $term->term_id, TRUE );
+			echo '" align="right" />';
+			echo '</a>'.'</div>';
+			echo '<div id="full-page-sermon-area">';
+			echo '<div id="full-page-post-title">';
+			echo '<span id="post-title">' . $title . '<a href="' . get_category_link( $term->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $term->name ) . '" ' . '>' . $term->name.'</a>'. '</span>'. '</div>';
+			echo '<div id="full-page-post">' . category_description( $term->term_id ) . '</div>';
+			echo '</div>';
+			echo '</div>';
+		  }
+		}
+		?>
+		
+****basic layout of squares on home etc
+
+		<a href="" class="categoryLink">
+			<div class="categoryFullBox">
+				<img src="http://localhost/FuzzyDigital/wp-content/uploads/2014/07/code.jpg" class="categoryImg" />
+				<span class="categoryName">category name</span>
+				<div class="categoryOverText">
+					This is the description for the category. blah blah blah blah blah blah
+				</div>
+			</div>
+		</a>
