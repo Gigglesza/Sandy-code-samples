@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SebataAMRModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="SebataAMRModelStoreContainer">
+    <EntitySet Name="ClientDetails" EntityType="SebataAMRModel.Store.ClientDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ConcentratorDetails" EntityType="SebataAMRModel.Store.ConcentratorDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MeterDetails" EntityType="SebataAMRModel.Store.MeterDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MeterReading" EntityType="SebataAMRModel.Store.MeterReading" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_ConcentratorDetails_ClientDetails" Association="SebataAMRModel.Store.FK_ConcentratorDetails_ClientDetails">
+      <End Role="ClientDetails" EntitySet="ClientDetails" />
+      <End Role="ConcentratorDetails" EntitySet="ConcentratorDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MeterDetails_ClientDetails" Association="SebataAMRModel.Store.FK_MeterDetails_ClientDetails">
+      <End Role="ClientDetails" EntitySet="ClientDetails" />
+      <End Role="MeterDetails" EntitySet="MeterDetails" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ClientDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ConcentratorDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CellID" Type="int" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="InstallDate" Type="date" />
+    <Property Name="InstallPerson" Type="varchar" MaxLength="100" />
+    <Property Name="Coordinates" Type="geography" />
+    <Property Name="ClientDetailsID" Type="int" />
+  </EntityType>
+  <EntityType Name="MeterDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AccountNumber" Type="varchar" MaxLength="50" />
+    <Property Name="MeterType" Type="varchar" MaxLength="10" />
+    <Property Name="MeterCount" Type="int" />
+    <Property Name="UnitID" Type="int" Nullable="false" />
+    <Property Name="LastReadingDate" Type="date" />
+    <Property Name="LastMeterReading" Type="varchar" MaxLength="10" />
+    <Property Name="StreetAddress" Type="varchar" MaxLength="50" />
+    <Property Name="Suburb" Type="varchar" MaxLength="50" />
+    <Property Name="Town" Type="varchar" MaxLength="50" />
+    <Property Name="PhysicalMeterNumber" Type="varchar" MaxLength="50" />
+    <Property Name="ConsumerName" Type="varchar" MaxLength="100" />
+    <Property Name="ErfNumber" Type="varchar" MaxLength="50" />
+    <Property Name="MeterLocation" Type="varchar" MaxLength="50" />
+    <Property Name="AvgReading" Type="varchar" MaxLength="10" />
+    <Property Name="isSingleorDuelFlow" Type="int" />
+    <Property Name="isBulkMeter" Type="bit" />
+    <Property Name="InstallDate" Type="date" />
+    <Property Name="InstallPerson" Type="varchar" MaxLength="100" />
+    <Property Name="Coordinates" Type="geography" />
+    <Property Name="ClientDetailsID" Type="int" />
+    <Property Name="DialCount" Type="int" />
+    <Property Name="ProductType" Type="int" />
+    <Property Name="Route" Type="nvarchar" MaxLength="100" />
+    <Property Name="ReadingPoint" Type="nvarchar" MaxLength="50" />
+    <Property Name="Allocation" Type="int" />
+  </EntityType>
+  <EntityType Name="MeterReading">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TSDateTime" Type="datetime" Nullable="false" />
+    <Property Name="TSInsertedDate" Type="datetime" Nullable="false" />
+    <Property Name="UnitID" Type="bigint" />
+    <Property Name="CellID" Type="int" Nullable="false" />
+    <Property Name="VBAT" Type="int" />
+    <Property Name="RSSI" Type="int" />
+    <Property Name="Conf" Type="int" />
+    <Property Name="FW" Type="int" />
+    <Property Name="WACC" Type="int" />
+    <Property Name="ProductType" Type="int" />
+    <Property Name="AreaCode" Type="int" />
+    <Property Name="EndOfMonth" Type="int" />
+    <Property Name="EndOfMonthDay" Type="int" />
+    <Property Name="MeterTotalToDate" Type="int" />
+    <Property Name="WMDOverrideStatus" Type="nvarchar" MaxLength="100" />
+    <Property Name="WMDTamperStatus" Type="nvarchar" MaxLength="100" />
+    <Property Name="WMDValveState" Type="nvarchar" MaxLength="100" />
+    <Property Name="WMDValveFault" Type="nvarchar" MaxLength="100" />
+    <Property Name="WMDLeakStatus" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <Association Name="FK_ConcentratorDetails_ClientDetails">
+    <End Role="ClientDetails" Type="SebataAMRModel.Store.ClientDetails" Multiplicity="0..1" />
+    <End Role="ConcentratorDetails" Type="SebataAMRModel.Store.ConcentratorDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClientDetails">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="ConcentratorDetails">
+        <PropertyRef Name="ClientDetailsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MeterDetails_ClientDetails">
+    <End Role="ClientDetails" Type="SebataAMRModel.Store.ClientDetails" Multiplicity="0..1" />
+    <End Role="MeterDetails" Type="SebataAMRModel.Store.MeterDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ClientDetails">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="MeterDetails">
+        <PropertyRef Name="ClientDetailsID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

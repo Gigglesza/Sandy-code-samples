@@ -1,0 +1,26 @@
+﻿Installing assembly 'C:\Development\SebataAMR\WindowsService1\bin\Debug\WindowsService1.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Development\SebataAMR\WindowsService1\bin\Debug\WindowsService1.InstallLog
+   assemblypath = C:\Development\SebataAMR\WindowsService1\bin\Debug\WindowsService1.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Development\SebataAMR\WindowsService1\bin\Debug\WindowsService1.exe assembly.
+Committing assembly 'C:\Development\SebataAMR\WindowsService1\bin\Debug\WindowsService1.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Development\SebataAMR\WindowsService1\bin\Debug\WindowsService1.InstallLog
+   assemblypath = C:\Development\SebataAMR\WindowsService1\bin\Debug\WindowsService1.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Development\SebataAMR\WindowsService1\bin\Debug\WindowsService1.exe assembly.
+Remove InstallState file because there are no installers.
+Installing assembly 'C:\Development\SebataAMR\WindowsService1\bin\Debug\WindowsService1.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Development\SebataAMR\WindowsService1\bin\Debug\WindowsService1.InstallLog
+   assemblypath = C:\Development\SebataAMR\WindowsService1\bin\Debug\WindowsService1.exe
+Installing service SebataAMRImportExport...
+Service SebataAMRImportExport has been successfully installed.
+Creating EventLog source SebataAMRImportExport in log Application...
+Committing assembly 'C:\Development\SebataAMR\WindowsService1\bin\Debug\WindowsService1.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Development\SebataAMR\WindowsService1\bin\Debug\WindowsService1.InstallLog
+   assemblypath = C:\Development\SebataAMR\WindowsService1\bin\Debug\WindowsService1.exe

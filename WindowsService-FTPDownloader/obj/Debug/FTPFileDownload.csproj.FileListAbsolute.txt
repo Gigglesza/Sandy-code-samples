@@ -1,0 +1,13 @@
+C:\Development\SebataAMR\WindowsService1\bin\Debug\WindowsService1.exe.config
+C:\Development\SebataAMR\WindowsService1\bin\Debug\WindowsService1.exe
+C:\Development\SebataAMR\WindowsService1\bin\Debug\WindowsService1.pdb
+C:\Development\SebataAMR\WindowsService1\bin\Debug\CsvHelper.dll
+C:\Development\SebataAMR\WindowsService1\bin\Debug\EntityFramework.dll
+C:\Development\SebataAMR\WindowsService1\bin\Debug\CsvHelper.pdb
+C:\Development\SebataAMR\WindowsService1\bin\Debug\CsvHelper.xml
+C:\Development\SebataAMR\WindowsService1\bin\Debug\EntityFramework.xml
+C:\Development\SebataAMR\WindowsService1\obj\Debug\FTPFileDownload.csprojResolveAssemblyReference.cache
+C:\Development\SebataAMR\WindowsService1\obj\Debug\FTPFileDownload.Service1.resources
+C:\Development\SebataAMR\WindowsService1\obj\Debug\FTPFileDownload.csproj.GenerateResource.Cache
+C:\Development\SebataAMR\WindowsService1\obj\Debug\WindowsService1.exe
+C:\Development\SebataAMR\WindowsService1\obj\Debug\WindowsService1.pdb

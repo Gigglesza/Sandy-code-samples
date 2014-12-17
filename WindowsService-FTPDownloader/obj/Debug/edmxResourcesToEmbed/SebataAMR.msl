@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SebataAMRModelStoreContainer" CdmEntityContainer="SebataAMREntities">
+    <EntitySetMapping Name="ClientDetails">
+      <EntityTypeMapping TypeName="SebataAMRModel.ClientDetail">
+        <MappingFragment StoreEntitySet="ClientDetails">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ConcentratorDetails">
+      <EntityTypeMapping TypeName="SebataAMRModel.ConcentratorDetail">
+        <MappingFragment StoreEntitySet="ConcentratorDetails">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CellID" ColumnName="CellID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="InstallDate" ColumnName="InstallDate" />
+          <ScalarProperty Name="InstallPerson" ColumnName="InstallPerson" />
+          <ScalarProperty Name="Coordinates" ColumnName="Coordinates" />
+          <ScalarProperty Name="ClientDetailsID" ColumnName="ClientDetailsID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MeterDetails">
+      <EntityTypeMapping TypeName="SebataAMRModel.MeterDetail">
+        <MappingFragment StoreEntitySet="MeterDetails">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="MeterType" ColumnName="MeterType" />
+          <ScalarProperty Name="MeterCount" ColumnName="MeterCount" />
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="LastReadingDate" ColumnName="LastReadingDate" />
+          <ScalarProperty Name="LastMeterReading" ColumnName="LastMeterReading" />
+          <ScalarProperty Name="StreetAddress" ColumnName="StreetAddress" />
+          <ScalarProperty Name="Suburb" ColumnName="Suburb" />
+          <ScalarProperty Name="Town" ColumnName="Town" />
+          <ScalarProperty Name="PhysicalMeterNumber" ColumnName="PhysicalMeterNumber" />
+          <ScalarProperty Name="ConsumerName" ColumnName="ConsumerName" />
+          <ScalarProperty Name="ErfNumber" ColumnName="ErfNumber" />
+          <ScalarProperty Name="MeterLocation" ColumnName="MeterLocation" />
+          <ScalarProperty Name="AvgReading" ColumnName="AvgReading" />
+          <ScalarProperty Name="isSingleorDuelFlow" ColumnName="isSingleorDuelFlow" />
+          <ScalarProperty Name="isBulkMeter" ColumnName="isBulkMeter" />
+          <ScalarProperty Name="InstallDate" ColumnName="InstallDate" />
+          <ScalarProperty Name="InstallPerson" ColumnName="InstallPerson" />
+          <ScalarProperty Name="Coordinates" ColumnName="Coordinates" />
+          <ScalarProperty Name="ClientDetailsID" ColumnName="ClientDetailsID" />
+          <ScalarProperty Name="DialCount" ColumnName="DialCount" />
+          <ScalarProperty Name="ProductType" ColumnName="ProductType" />
+          <ScalarProperty Name="Route" ColumnName="Route" />
+          <ScalarProperty Name="ReadingPoint" ColumnName="ReadingPoint" />
+          <ScalarProperty Name="Allocation" ColumnName="Allocation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MeterReadings">
+      <EntityTypeMapping TypeName="SebataAMRModel.MeterReading">
+        <MappingFragment StoreEntitySet="MeterReading">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TSDateTime" ColumnName="TSDateTime" />
+          <ScalarProperty Name="TSInsertedDate" ColumnName="TSInsertedDate" />
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="CellID" ColumnName="CellID" />
+          <ScalarProperty Name="VBAT" ColumnName="VBAT" />
+          <ScalarProperty Name="RSSI" ColumnName="RSSI" />
+          <ScalarProperty Name="Conf" ColumnName="Conf" />
+          <ScalarProperty Name="FW" ColumnName="FW" />
+          <ScalarProperty Name="WACC" ColumnName="WACC" />
+          <ScalarProperty Name="ProductType" ColumnName="ProductType" />
+          <ScalarProperty Name="AreaCode" ColumnName="AreaCode" />
+          <ScalarProperty Name="EndOfMonth" ColumnName="EndOfMonth" />
+          <ScalarProperty Name="EndOfMonthDay" ColumnName="EndOfMonthDay" />
+          <ScalarProperty Name="MeterTotalToDate" ColumnName="MeterTotalToDate" />
+          <ScalarProperty Name="WMDOverrideStatus" ColumnName="WMDOverrideStatus" />
+          <ScalarProperty Name="WMDTamperStatus" ColumnName="WMDTamperStatus" />
+          <ScalarProperty Name="WMDValveState" ColumnName="WMDValveState" />
+          <ScalarProperty Name="WMDValveFault" ColumnName="WMDValveFault" />
+          <ScalarProperty Name="WMDLeakStatus" ColumnName="WMDLeakStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
